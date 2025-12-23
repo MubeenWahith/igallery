@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Creative Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Interactive Football Gallery</h2>
+<h3>MOHAMED MUBEEN.A (25004201)</h3>
+<hr>
+<br>
+<br>
+
+<div class="gallery">
+    <img src="1.jpeg" data-title="Cristiano Ronaldo" onclick="openImage(this)">
+    <img src="2.jpeg" data-title="Leo Messi" onclick="openImage(this)">
+    <img src="3.avif" data-title="Sergio Ramos" onclick="openImage(this)">
+    <img src="4.jpg" data-title="Toni Kross" onclick="openImage(this)">
+    <img src="5.jpeg" data-title="Kylian Mbappe" onclick="openImage(this)">
+    <img src="6.jpg" data-title="Zinedine Zidane" onclick="openImage(this)">
+    <img src="7.avif" data-title="Marco van Basten" onclick="openImage(this)">
+    <img src="8.webp" data-title="David Beckham" onclick="openImage(this)">
+    <img src="9.jpeg" data-title="Marco van Basten" onclick="openImage(this)">
+    <img src="10.webp" data-title="paolo maldini" onclick="openImage(this)">
+</div>
+<br>
+<br>
+<hr>
+
+<div class="modal" id="imageModal" onclick="closeImage()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="close" onclick="closeImage()">&times;</span>
+
+        
+        <img id="modalImg" src="">
+
+        <p id="caption"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
